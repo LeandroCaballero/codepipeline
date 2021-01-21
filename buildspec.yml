@@ -18,5 +18,6 @@ artifacts:
   files:
     - public/**/*
     - src/**/*
+    - build
     - package.json
     - appspec.yml
