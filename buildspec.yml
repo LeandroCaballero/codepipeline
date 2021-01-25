@@ -5,6 +5,7 @@ phases:
     commands:
       #installs dependencies into the node_modules/ directory
       - npm install
+      - apt install zip
   build:
     commands:
       - echo Build started on `date`
@@ -13,12 +14,8 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-# Include only the files required for your application to run.
+      - 
+# 
 artifacts:
   files:
-    - public/**/*
-    - src/**/*
-    - package.json
-    - appspec.yml
-  discard-paths: no
-  base-directory: build
+    - 'build/*'
